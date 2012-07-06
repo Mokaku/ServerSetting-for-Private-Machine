@@ -8,6 +8,8 @@ bindkey -v
 zstyle :compinstall filename '/home/tobe/.zshrc'
 
 autoload -Uz compinit
+autoload colors
+colors
 compinit
 # End of lines added by compinstall
 
@@ -84,7 +86,9 @@ setopt prompt_subst
 
 # ^[  は「エスケープ」
 ## PROMPT="%B%{[36m%}%n@%m %c %#%{[m%}%b " # 通常のプロンプト
-PROMPT="%B%{[37m%}[%T:%n@%m %c] %#%{[m%}%b "
+PROMPT="%B%{[37m%}%{${fg[yellow]}%}[%T:%n@%m %c]%{${reset_color}%} %#%{[m%}%b "
+## PROMPT="%B%{[37m%}[%{${fg[red]}%}%T%{${reset_color}%}:%n@%m %c] %#%{[m%}%b "
+## PROMPT="%B%{[37m%}%{${fg[yellow]}%}[%{${reset_color}%}%{${fg[red]}%}%T%{${reset_color}%}:%n@%m %c%{${fg[yellow]}%}]%{${reset_color}%} %#%{[m%}%b "
 PROMPT2="%B%_>%b "                          # forやwhile/複数行入力時などに表示されるプロンプト
 SPROMPT="%r is correct? [n,y,a,e]: "        # 入力ミスを確認する場合に表示されるプロンプト
 RPROMPT="%T"                                # 右に表示したいプロンプト(24時間制での現在時刻)
