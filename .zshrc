@@ -68,7 +68,8 @@ export LANG=ja_JP.UTF-8
 
 # lsコマンドの補完候補にも色付き表示
 eval `dircolors`
-zstyle ':completion:*:default' list-colors ${LS_COLORS}
+## zstyle ':completion:*:default' list-colors ${LS_COLORS}
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # kill の候補にも色付き表示
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31'
 
@@ -94,6 +95,7 @@ setopt transient_rprompt                    # 右プロンプトに入力がき�
 
 # alias
 ## alias ls='ls -aFG'
+alias ls='ls -GF --color=auto'
 alias ll='ls -al'
 
 ## export TERM=vt100-color
