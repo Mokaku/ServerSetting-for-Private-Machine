@@ -3,6 +3,10 @@ filetype off
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
+
+set fileencodings=iso-2022-jp,euc-jp,cp932,ucs-bom,utf-8,default,latin1
+
+
 " プラグインを記述する
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
