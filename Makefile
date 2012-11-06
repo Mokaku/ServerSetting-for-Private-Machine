@@ -6,9 +6,9 @@
 ################################
 
 
-DOT_FILES = .zshrc .vimrc .vim .bashrc .screenrc .tmux bin
+DOT_FILES = .zshrc .vimrc .vim .bashrc .screenrc .tmux.conf bin
 
-all: zsh vim bash screen bin tmux
+all: zsh vim bash screen tmux bin
 
 zsh: $(foreach f, $(filter .zsh%, $(DOT_FILES)), link-dot-file-$(f))
 
