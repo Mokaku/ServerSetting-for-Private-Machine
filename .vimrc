@@ -4,8 +4,11 @@ set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 
-set fileencodings=iso-2022-jp,euc-jp,cp932,ucs-bom,utf-8,default,latin1
+" set fileencodings=iso-2022-jp,euc-jp,cp932,ucs-bom,utf-8,default,latin1
 
+
+set encoding=utf-8
+set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8
 
 " プラグインを記述する
 Bundle 'Shougo/neocomplcache'
