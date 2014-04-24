@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-cat <<__EOA__
+cat <<__EOA__ >>~/.login
 # .login
 #
 # ログインシェルがcsh/tcshだった場合に好きなシェルを起動する。
@@ -12,7 +12,7 @@ if ( -f "$favorit_shell" && "$shell" != "$favorit_shell" ) then
 endif
 __EOA__
 
-cat <<__EOB__
+cat <<__EOB__ >>~/.profile
 # .profile
 #
 # ログインシェルがshだった場合に好きなシェルを起動する。

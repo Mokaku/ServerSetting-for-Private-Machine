@@ -101,6 +101,7 @@ setopt transient_rprompt                    # 右プロンプトに入力がき�
 ## alias ls='ls -aFG'
 alias ls='ls -GF --color=auto'
 alias ll='ls -al'
+alias xml='xmlstarlet'
 
 ## export TERM=vt100-color
 

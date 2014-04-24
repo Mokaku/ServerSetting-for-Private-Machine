@@ -9,3 +9,6 @@ git submodule init
 git submodule update
 
 をする必要がある
+
+[2014/04/24]
+bash がデフォルトサーバでないサーバにて　「.login」「.profile」を設置してbashをログインスクリプト化するスクリプトを設置
