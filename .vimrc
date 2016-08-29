@@ -1,6 +1,7 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/vundle.git/
+" set rtp+=~/.vim/vundle.git/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 
@@ -16,6 +17,7 @@ syntax on
 
 
 " プラグインを記述する
+Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimproc'
@@ -24,6 +26,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/surround.vim'
 Bundle 'sudo.vim'
+Bundle 'chase/vim-ansible-yaml'
 
 " Vundleの処理後、ftpluginとindentを読み込む
 filetype plugin indent on

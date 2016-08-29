@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/tobe/Documents/HDD2/TMP/DL/Torrent/COLDPLAY/A Rush Of Blood To The Head/mp3'
+let g:netrw_dirhist_2='/Users/tobe/Documents/Works/wizpra/Infra/pozica-infra/ansible/nginx/product'
+let g:netrw_dirhist_3='/Users/tobe/Documents/Works/wizpra/pozica/pozica-infra/ansible/playbooks'
+let g:netrw_dirhist_4='/Users/tobe/Documents/Works/wizpra/pozica/pozica-infra/ansible/Pozica-System/roles/nginx'
+let g:netrw_dirhist_5='/Users/tobe/Documents/Works/wizpra/pozica/pozica-infra/ansible/Pozica-System/roles/nginx/tasks'
+let g:netrw_dirhist_6='/Users/tobe/Documents/Works/wizpra-infra/wizpra-infra2/provisioning/roles/nginx/templates'
