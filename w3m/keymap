@@ -1,0 +1,9 @@
+keymap N NEXT
+keymap C-O CHARSET
+
+# カーソル下のURLをクリップボードへコピーする
+## keymap m EXTERN_LINK "echo %s | pbcopy"
+keymap m EXTERN_LINK "echo %s >  ./pbcopy_`date +%Y%m%d%H%M%S`.txt"
+ 
+# 現在のページのURLをクリップボードにコピーする
+keymap M EXTERN "echo %s | pbcopy
